@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbler</title>
+    <link rel="shortcut icon" href="/imgs/logo-blue.jpg" type="image/x-icon" />
+
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="header-elementes">
+            <a href=""><img src="./imgs/logo-full.png" alt="" id="img-header"></a>
+
+            <div class="buttons-header">
+
+                <a
+                    target="_blank" 
+                    href="https://app.umbler.com/account/login/?ReturnUrl=%2F">
+                    Entrar</a>
+
+                <a 
+                    target="_blank" 
+                    href="https://app.umbler.com/account/register">Cadastrar</a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="tela-principal">
+        <div class="icones-pequenos">
+            <a href="#precos" onclick="slide(1)"><img src="/imgs/email-logo.png" alt=""></a>
+            <a href="#precos" onclick="slide(2)"><img src="/imgs/servicos-logo.png" alt=""></a>
+            <a href="#precos" onclick="slide(3)"><img src="/imgs/domino-logo.png" alt=""></a>
+        </div>
+
+        <div class="img-corpo">
+            <img src="./imgs/logo-full.png" alt="">
+        </div>
+
+        <div class="botoes-escolha">
+            <a href="#produtos">Produtos</a>
+            <a href="#atendimento">Atendimento</a>
+            <a href="#precos">Preços</a>
+        </div>
+    </div>
+
+
+    <!-- --------------------------------------------- PRODUTOS ----------------------------------------------->
+
+    <div class="tela-padrao" id="produtos">
+
+        <div class="titulo-padrao">
+            <h2>Produtos</h2>
+            <hr class="linha-padrao">
+        </div>
+
+        <div class="corpo-padrao" style="flex-direction: row;" id="corpo-produtos">
+
+            <a class="emails" href="#precos" onclick="slide(1)">
+                <h3>EMAILS</h3>
+
+                <div class="espaco-padrao-produtos">
+                    <img src="./imgs/email-logo.png" alt="">
+                </div>
+
+                <h3 style="font-size: 1rem;">Confira os Preços</h3>
+            </a>
+
+            <a class="hospedagem" href="#precos" onclick="slide(2)">
+
+                <h3>HOSPEDAGEM</h3>
+
+                <div class="espaco-padrao-produtos">
+                    <img src="./imgs/servicos-logo.png" alt="">
+                </div>
+
+                <h3 style="font-size: 1rem;">Confira os Preços</h3>
+            </a>
+
+            <a class="dominio" href="#precos" onclick="slide(3)">
+                <h3>DOMÍNIO</h3>
+
+                <div class="espaco-padrao-produtos">
+                    <img src="./imgs/domino-logo.png" alt="">
+                </div>
+
+                <h3 style="font-size: 1rem;">Confira os Preços</h3>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- --------------------------------------------- ATENDIMENTO ----------------------------------------------->
+
+    <div class="tela-padrao" id="atendimento">
+
+        <div class="titulo-padrao">
+            <h2>Atendimento</h2>
+            <hr class="linha-padrao">
+        </div>
+
+        <div class="corpo-padrao" style="flex-direction: row;">
+            <div id="foto-atendimento"></div>
+            <div id="descrição-atendimento">
+                <label name="" id="" cols="30" rows="10">
+                    O time de atendimento da Umbler conta com um elenco de profisisonais capacitados para lhe ajudar com
+                    qualquer problema ou dúvida que você tenha em relação à todos os serviços que você contratou
+                    conosco. O atendimento é feito via chat no próprio painel da umbler.
+                    <br><br>
+                    Além do atendimento também temos um site repleto de tutoriais para lhe ajudar com dúvidas
+                    corriqueiras.
+                    <br><br>
+                    Acesse nossos tutoriais <a href="https://help.umbler.com/hc/pt-br" target="_blank">aqui</a>.
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------- PRECOS ----------------------------------------------->
+
+
+    <div class="tela-padrao" id="precos" style="height: 100vh; justify-content: center;">
+
+        <div class="titulo-padrao">
+            <h2>Preços</h2>
+            <hr class="linha-padrao">
+        </div>
+
+        <div class="corpo-padrao" style="flex-direction: column; justify-content: space-around;">
+
+            <div class="painel-botoes-precos">
+
+                <a onclick="slide(1)" id="selecionador-precos">
+
+                    <div class="botao-selecionador-precos" id="btn-selecionador-emails-precos">
+                        <img src="./imgs/email-logo.png" alt="">
+                        <label>EMAILS</label>
+                    </div>
+
+                    <hr id="hr-emails" class="linha-precos">
+                </a>
+
+                <a onclick="slide(2)" id="selecionador-precos">
+
+                    <div class="botao-selecionador-precos">
+                        <img src="./imgs/servicos-logo.png" alt="">
+                        <label>HOSPEDAGEM</label>
+                    </div>
+                    <hr id="hr-hospedagem" class="linha-precos">
+                </a>
+
+                <a onclick="slide(3)" id="selecionador-precos">
+
+                    <div class="botao-selecionador-precos">
+                        <img src="./imgs/domino-logo.png" alt="">
+                        <label>DOMÍNIOS</label>
+                    </div>
+
+                    <hr id="hr-dominio" class="linha-precos">
+                </a>
+
+            </div>
+
+
+            <div class="paineis-precos">
+
+                <div id="precos-emails" class="emails">
+
+                    <div class="bloco-precos-padrao">
+                        <div class="corpo-bloco-precos-padrao" style="background-color: #4e73e3 ;">
+                            <label for=""><span style="font-size:3rem; font-weight: 900; ">GRATIS</span></label>
+
+                            <a target="_blank" href="https://www.umbler.com/br/precos#emails" class="botao-comprar-precos-padrao" style="background-color: white;">
+                                <span style="color:black">Pegue Agora</span>
+                            </a>
+                        </div>
+                        <div class="rodape-bloco-precos-padrao" style="background: #2e4484; height: 10%;">
+                            <label for="" style="color: white;">*Limitado a 1 conta por domínio</label>
+                        </div>
+                    </div>
+
+                    <div class="bloco-precos-padrao">
+                        <div class="corpo-bloco-precos-padrao">
+                            <span style="font-size:3rem; font-weight: 900; ">5 GB</span>
+                            <label for="">R$ 5/mes</label>
+                            <a target="_blank" href="https://www.umbler.com/br/precos#emails" class="botao-comprar-precos-padrao">
+                                <span>Comprar</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bloco-precos-padrao">
+                        <div class="corpo-bloco-precos-padrao">
+                            <span style="font-size:3rem; font-weight: 900; ">15 GB</span>
+                            <label for="">R$ 8/mes</label>
+                            <a target="_blank" href="https://www.umbler.com/br/precos#emails" class="botao-comprar-precos-padrao">
+                                <span>Comprar</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bloco-precos-padrao">
+                        <div class="corpo-bloco-precos-padrao">
+                            <span style="font-size:3rem; font-weight: 900; ">50 GB</span>
+                            <label for="">R$ 19/mes</label>
+                            <a target="_blank" href="https://www.umbler.com/br/precos#emails" class="botao-comprar-precos-padrao">
+                                <span>Comprar</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="precos-hospedagem" class="hospedagem">
+
+                    <div class="bloco-precos-padrao">
+                        <div class="corpo-bloco-precos-padrao">
+                            <label for="">R$ <span style="font-size:3rem; font-weight: 900; ">15</span> /mes</label>
+
+                            <a target="_blank" href="https://www.umbler.com/br/precos#sites" class="botao-comprar-precos-padrao">
+                                <span>Comprar</span>
+                            </a>
+                        </div>
+
+                        <div class="rodape-bloco-precos-padrao">
+
+                            <div>
+                                <label for="">ESPECIFICAÇOES</label>
+                            </div>
+                            
+                            <div class="linha-rodape">
+                                <hr>
+                            </div>
+
+                            <div class="icons-rodape">
+
+                                <div class="icons-rodape-info">
+
+                                    <div><img src="/imgs/icons/001-cpu-do-computador.svg" alt=""></div>
+
+                                    <div><label for="">CPU</label></div>
+
+                                    <div><label for="">2 Cores</label></div>
+
+                                </div>
+
+                                <div class="icons-rodape-info">
+
+                                    <div><img src="/imgs/icons/003-armazenamento-de-dados.svg" alt=""></div>
+                                    <div><label for="">RAM</label></div>
+                                    <div><label for="">512 MB</label></div>
+
+                                </div>
+
+                                <div class="icons-rodape-info">
+                                    <div><img src="/imgs/icons/002-disco-rigido.svg" alt=""></div>
+                                    <div><label for="">SSD</label></div>
+                                    <div><label for="">1 GB</label></div>
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="bloco-precos-padrao">
+                        <div class="corpo-bloco-precos-padrao">
+                            <label for="">R$ <span style="font-size:3rem; font-weight: 900; ">24</span> /mes</label>
+                            <a target="_blank" href="https://www.umbler.com/br/precos#sites" class="botao-comprar-precos-padrao">
+                                <span>Comprar</span>
+                            </a>
+                        </div>
+
+                        <div class="rodape-bloco-precos-padrao">
+
+                            <div>
+                                <label for="">ESPECIFICAÇOES</label>
+                            </div>
+                            
+                            <div class="linha-rodape">
+                                <hr>
+                            </div>
+
+                            <div class="icons-rodape">
+
+                                <div class="icons-rodape-info">
+
+                                    <div><img src="/imgs/icons/001-cpu-do-computador.svg" alt=""></div>
+
+                                    <div><label for="">CPU</label></div>
+
+                                    <div><label for="">2 Cores</label></div>
+
+                                </div>
+
+                                <div class="icons-rodape-info" >
+
+                                    <div><img src="/imgs/icons/003-armazenamento-de-dados.svg" alt=""></div>
+                                    <div><label for="">RAM</label></div>
+                                    <div><label for="">1 GB</label></div>
+
+                                </div>
+
+                                <div class="icons-rodape-info">
+                                    <div><img src="/imgs/icons/002-disco-rigido.svg" alt=""></div>
+                                    <div><label for="">SSD</label></div>
+                                    <div><label for="">10 GB</label></div>
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="bloco-precos-padrao">
+                        <div class="corpo-bloco-precos-padrao">
+                            <label for="">R$ <span style="font-size:3rem; font-weight: 900; ">39</span> /mes</label>
+                            <a target="_blank" href="https://www.umbler.com/br/precos#sites" class="botao-comprar-precos-padrao">
+                                <span>Comprar</span>
+                            </a>
+                        </div>
+
+                        <div class="rodape-bloco-precos-padrao">
+
+                            <div>
+                                <label for="">ESPECIFICAÇOES</label>
+                            </div>
+                            
+                            <div class="linha-rodape">
+                                <hr>
+                            </div>
+
+                            <div class="icons-rodape">
+
+                                <div class="icons-rodape-info">
+
+                                    <div><img src="/imgs/icons/001-cpu-do-computador.svg" alt=""></div>
+
+                                    <div><label for="">CPU</label></div>
+
+                                    <div><label for="">3 Cores</label></div>
+
+                                </div>
+
+                                <div class="icons-rodape-info">
+
+                                    <div><img src="/imgs/icons/003-armazenamento-de-dados.svg" alt=""></div>
+                                    <div><label for="">RAM</label></div>
+                                    <div><label for="">2 GB</label></div>
+
+                                </div>
+
+                                <div class="icons-rodape-info">
+                                    <div><img src="/imgs/icons/002-disco-rigido.svg" alt=""></div>
+                                    <div><label for="">SSD</label></div>
+                                    <div><label for="">20 GB</label></div>
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="bloco-precos-padrao">
+                        <div class="corpo-bloco-precos-padrao">
+                            <label for="">R$ <span style="font-size:3rem; font-weight: 900; ">150</span> /mes</label>
+                            <a target="_blank" href="https://www.umbler.com/br/precos#sites" class="botao-comprar-precos-padrao">
+                                <span>Comprar</span>
+                            </a>
+                        </div>
+
+                        <div class="rodape-bloco-precos-padrao">
+
+                            <div>
+                                <label for="">ESPECIFICAÇOES</label>
+                            </div>
+                            
+                            <div class="linha-rodape">
+                                <hr>
+                            </div>
+
+                            <div class="icons-rodape">
+
+                                <div class="icons-rodape-info">
+
+                                    <div><img src="/imgs/icons/001-cpu-do-computador.svg" alt=""></div>
+
+                                    <div><label for="">CPU</label></div>
+
+                                    <div><label for="">4 Cores</label></div>
+
+                                </div>
+
+                                <div class="icons-rodape-info">
+
+                                    <div><img src="/imgs/icons/003-armazenamento-de-dados.svg" alt=""></div>
+                                    <div><label for="">RAM</label></div>
+                                    <div><label for="">6 GB</label></div>
+
+                                </div>
+
+                                <div class="icons-rodape-info">
+                                    <div><img src="/imgs/icons/002-disco-rigido.svg" alt=""></div>
+                                    <div><label for="">SSD</label></div>
+                                    <div><label for="">40 GB</label></div>
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="precos-dominios" class="dominios">
+                    <label for="" style="font-size: 5vh; font-weight: 900;">Domínios a preço de custo</label>
+                    
+                    <div id="input-domain">
+
+                        <div id="input-domain-interno">
+
+                            <input id="input-search-domain-disable" type="text" value="www." disabled>
+
+                            <input id="input-search-domain" type="text">
+
+                            <div class="button-search-domain">
+
+                                <div id="button-search-domain-interno">
+                                    <div>
+                                        <a target="_blank" href="https://www.umbler.com/br/precos#domain"  onclick="whois()">Verificar</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- --------------------------------------------- FOOTER ----------------------------------------------->
+
+    <footer style="height: 8vh; width: 99.1vw; background: #557cf2;">
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
